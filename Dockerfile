@@ -109,4 +109,4 @@ EXPOSE 5000
 ENTRYPOINT ["/entrypoint.sh"]
 
 # Comando padrão (pode ser sobrescrito)
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "4", "--timeout", "120", "--access-logfile", "-", "--error-logfile", "-", "app:app"]
+CMD ["/entrypoint.sh"]
